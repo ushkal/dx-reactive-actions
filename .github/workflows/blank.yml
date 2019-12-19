@@ -11,12 +11,9 @@ jobs:
     - uses: actions/checkout@v2
       with:
         repository: 'DevExpress/devextreme-reactive'
-        path: devextreme-reactive
     - name: Upgrade yarn
       run: yarn policies set-version
     - name: Run yarn
-      run: |
-        cd devextreme-reactive
-        yarn install
+      run: yarn install
     - name: Build sources
       run: yarn build
