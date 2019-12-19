@@ -13,7 +13,7 @@ jobs:
         repository: 'DevExpress/devextreme-reactive'
         path: devextreme-reactive
     - name: Upgrade yarn
-      run: yarn policies set-version 1.19.2
+      run: yarn policies set-version
     - name: Run yarn
       run: |
         cd devextreme-reactive
