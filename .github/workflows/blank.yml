@@ -13,10 +13,10 @@ jobs:
         repository: 'DevExpress/devextreme-reactive'
         path: devextreme-reactive
     - name: Upgrade yarn
-      run: curl -o- -L https://yarnpkg.com/install.sh | bash
+      run: npm install -g yarn
     - name: Run yarn
       run: |
         cd devextreme-reactive
-        yarn
+        yarn install
     - name: Build sources
       run: yarn build
