@@ -13,6 +13,8 @@ jobs:
         repository: 'DevExpress/devextreme-reactive'
         path: devextreme-reactive
     - name: Run yarn
-      run: yarn
+      run: |
+        cd devextreme-reactive
+        yarn
     - name: Build sources
       run: yarn build
